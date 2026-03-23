@@ -12,7 +12,7 @@ brew install op-tactile
 ### Docker / CI (without Homebrew)
 
 ```bash
-VERSION=v1.4.0
+VERSION=v1.5.0
 BASE_URL="https://raw.githubusercontent.com/tactileentertainment/homebrew-op-tools/${VERSION}/scripts"
 mkdir -p /usr/local/libexec
 curl -fsSL "${BASE_URL}/_op-tactile-common.sh" -o /usr/local/libexec/_op-tactile-common.sh
