@@ -1,11 +1,11 @@
-# homebrew-op-tactile
+# op-tools
 
 Homebrew tap for **op-tactile** — 1Password CLI wrappers with automatic Connect server failover to service account.
 
 ## Install
 
 ```bash
-brew tap tactileentertainment/op-tactile
+brew tap tactileentertainment/op-tools
 brew install op-tactile
 ```
 
@@ -13,7 +13,7 @@ brew install op-tactile
 
 ```bash
 VERSION=v2.0.0
-BASE_URL="https://raw.githubusercontent.com/tactileentertainment/homebrew-op-tactile/${VERSION}/scripts"
+BASE_URL="https://raw.githubusercontent.com/tactileentertainment/op-tools/${VERSION}/scripts"
 curl -fsSL "${BASE_URL}/_op-tactile-common.sh" -o /usr/local/libexec/_op-tactile-common.sh
 for cmd in op-read op-inject op-item-create op-item-delete; do
   curl -fsSL "${BASE_URL}/${cmd}.sh" -o /usr/local/bin/${cmd}
@@ -88,7 +88,7 @@ If you were using the standalone `op-read` formula:
 ```bash
 brew uninstall op-read
 brew untap tactileentertainment/op-read
-brew tap tactileentertainment/op-tactile
+brew tap tactileentertainment/op-tools
 brew install op-tactile
 ```
 

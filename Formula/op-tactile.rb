@@ -1,7 +1,7 @@
 class OpTactile < Formula
   desc "1Password CLI wrappers with Connect server failover"
-  homepage "https://github.com/tactileentertainment/homebrew-op-tactile"
-  url "https://github.com/tactileentertainment/homebrew-op-tactile.git",
+  homepage "https://github.com/tactileentertainment/op-tools"
+  url "https://github.com/tactileentertainment/op-tools.git",
       tag: "v2.0.0"
   license "MIT"
 
