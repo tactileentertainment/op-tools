@@ -3,6 +3,7 @@ set -euo pipefail
 
 _OP_SCRIPT_NAME="op-item-delete"
 _OP_SUPPRESS_STDERR="false"
+_OP_SKIP_CONNECT="true"  # Connect server does not support op item delete
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # shellcheck source=_op-tactile-common.sh
