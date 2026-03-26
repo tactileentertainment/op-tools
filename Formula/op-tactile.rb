@@ -23,9 +23,13 @@ class OpTactile < Formula
       Installed commands:
         op-read          Read secrets (op read / op item get)
         op-inject        Inject secrets into templates (op inject)
-        op-item-create   Create items (op item create)
-        op-item-delete   Delete items (op item delete)
-        op-item-edit     Edit items (op item edit)
+        op-item-create   Create items (Connect REST API / op item create)
+        op-item-delete   Delete items (Connect REST API / op item delete)
+        op-item-edit     Edit items (Connect REST API / op item edit)
+
+      op-item-create/delete/edit use curl against the Connect REST API
+      and require jq. They fall back to op CLI with service account if
+      Connect or jq is unavailable.
 
       Required env vars (at least one set):
         OP_CONNECT_HOST + OP_CONNECT_TOKEN   (Connect server)
